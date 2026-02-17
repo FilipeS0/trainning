@@ -1,9 +1,0 @@
-<h2>Register</h2>
-
-@if (step === 1) {
-  <app-user-form (next)="goToStep2()"></app-user-form>
-}
-
-@if (step === 2) {
-  <app-pass-form (back)="goToStep1()"></app-pass-form>
-}

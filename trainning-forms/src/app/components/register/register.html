@@ -1,0 +1,9 @@
+<h2>Register</h2>
+
+@if (step === 1) {
+  <app-register-step1 (next)="goToStep2()"></app-register-step1>
+}
+
+@if (step === 2) {
+  <app-register-step2 (back)="goToStep1()"></app-register-step2>
+}
